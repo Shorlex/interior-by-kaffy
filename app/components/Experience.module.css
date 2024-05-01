@@ -81,8 +81,10 @@
   border: 1px solid lightgrey;
   border-radius: 5px;
   padding: 20px 50px;
-  position: relative;
   transition: 0.4s all ease-in-out;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
 .link:hover {
@@ -92,13 +94,13 @@
 
 @media (max-width: 1410px) {
   .section {
-    padding: 100px 100px 0 100px !important;
+    padding: 100px 100px 50px 100px !important;
   }
 }
 
 @media (max-width: 1210px) {
   .section {
-    padding: 100px 50px 0 50px !important;
+    padding: 100px 50px 50px 50px !important;
   }
   .experienceBody {
     margin-top: 100px;
@@ -111,7 +113,7 @@
 
 @media (max-width: 750px) {
   .section {
-    padding: 100px 0px 0 0px !important;
+    padding: 100px 0px 50px 0px !important;
   }
   .experienceImage {
     width: 100%;
@@ -143,5 +145,8 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+  }
+  .aboutTitle{
+    margin-top: 20px;
   }
 }

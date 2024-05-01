@@ -103,6 +103,7 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 import styles from "./Portfolio.module.css";
+import Image from "next/image";
 
 const portfolios = [
   {
@@ -191,6 +192,22 @@ const Portfolio = () => {
             <div className={styles.portfolioDetails}>
               <h4>{portfolio.heading}</h4>
               <p>{portfolio.body}</p>
+            </div>
+          </motion.div>
+        ))}
+        {portfolios.map((portfolio, index) => (
+          <motion.div
+            className={styles.resPortfolio}
+            key={portfolio.id}
+            initial="center"
+            animate={positions[positionIndexes[index]]}
+            variants={imageVarients}
+            transition={{ duration: 0.5 }}
+          >
+            <Image src={portfolio.img} width={300} height={250} />
+            <div style={{ backgroundColor: "#fff", padding: 10 }}>
+              <h4 className={styles.h4}>{portfolio.heading}</h4>
+              <p className={styles.p}>{portfolio.body}</p>
             </div>
           </motion.div>
         ))}

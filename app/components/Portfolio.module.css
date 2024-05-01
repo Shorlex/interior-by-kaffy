@@ -7,7 +7,7 @@
   align-items: center;
 }
 
-.image {
+.image, .resPortfolio {
   border-radius: 20px;
   box-shadow: 5px 5px 20px grey;
   width: 40%;
@@ -16,14 +16,19 @@
   overflow: hidden;
 }
 
-.button{
+.resPortfolio{
+  display: none;
+}
+
+.button {
   width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: center;
 }
 
-.nextBtn, .moreBtn {
+.nextBtn,
+.moreBtn {
   border-radius: 10px;
   border: none;
   padding: 10px 30px;
@@ -32,12 +37,12 @@
   margin-left: 10px;
 }
 
-.nextBtn{
+.nextBtn {
   background-color: black;
   color: #fff;
 }
 
-.moreBtn{
+.moreBtn {
   background-color: #fff;
   color: #111;
 }
@@ -62,7 +67,8 @@
   background-color: black;
 }
 
-.portfolioDetails h4, .portfolioDetails p{
+.portfolioDetails h4,
+.portfolioDetails p {
   z-index: 1;
   position: relative;
 }
@@ -71,39 +77,71 @@
   transform: translateY(150%);
 } */
 
-
-
-
 @media (min-width: 1750px) {
-  .portfolios{
+  .portfolios {
     height: 800px;
   }
 }
 
-
-@media (max-width: 1350px) {
-  .portfolioDetails{
-    transform: translateY(130%);
-  }
-}
-
-
-@media (max-width: 1050px) {
-  .portfolios{
+@media (max-width: 1600px) {
+  .portfolios {
     height: 600px;
   }
-  .portfolioDetails{
-    padding: 30px;
-    transform: translateY(0%);
+}
+
+@media (max-width: 1351px) {
+  .portfolioDetails {
+    padding: 10px;
+    transform: translateY(250%);
   }
 }
 
-@media (max-width: 750px) {
-  .image{
+@media (max-width: 1127.5px){
+  .portfolioDetails {
+    padding: 10px;
+    transform: translateY(210%);
+  }
+}
+
+@media (max-width: 1051px) {
+  .image {
+    width: 50%;
+  }
+  .portfolioDetails{
+    transform: translateY(255%);
+  }
+}
+
+@media (max-width: 950px) {
+  .image {
+    width: 50%;
+  }
+}
+@media (max-width: 902px) {
+  .image {
     width: 60%;
   }
+}
+
+@media(max-width: 751.5px){
   .portfolioDetails{
-    padding: 10px;
+    transform: translateY(210%);
   }
 }
 
+@media (max-width: 651px){
+  .image{
+    display: none;
+  }
+  .resPortfolio{
+    display: block;
+    width: 300px;
+    height: 400px;
+  }
+  .h4 {
+    font-size: 1rem;
+  }
+  .p{
+    font-size: .7rem;
+  }
+}

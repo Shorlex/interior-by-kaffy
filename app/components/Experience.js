@@ -37,7 +37,7 @@ const Experience = () => {
     <section
       style={{
         position: "relative",
-        padding: "100px 200px 0 200px",
+        padding: "100px 200px 10px 200px",
         overflow: "hidden",
       }}
       className={styles.section}
@@ -104,6 +104,7 @@ const Experience = () => {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, ease: "linear", delay: 0.5 }}
               viewport={{ once: true }}
+              style={{ marginTop: 20 }}
             >
               We are taking firm steps forward to make your dreams come true in
               your interior decoration and furniture manufacturing sector.
@@ -134,6 +135,7 @@ const Experience = () => {
                       whileInView={{ opacity: 1, y: 0 }}
                       transition={{ duration: 0.6, ease: "linear" }}
                       viewport={{ once: true }}
+                      className={styles.aboutTitle}
                     >
                       {item.writeUp.title}
                     </motion.h5>
@@ -150,8 +152,8 @@ const Experience = () => {
               ))}
             </div>
             <Link href={""} className={styles.link}>
-              Get to know us{" "}
-              <span style={{ position: "absolute", top: 22, left: 150 }}>
+              <p>Get to know us </p>
+              <span style={{ marginTop: 3, marginLeft: 10 }}>
                 <FaArrowRight />
               </span>
             </Link>

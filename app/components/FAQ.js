@@ -87,7 +87,7 @@ const FAQ = () => {
         viewport={{ once: true }}
       >
         <h2>Design FAQs</h2>
-        <p style={{ textAlign: "center" }}>
+        <p style={{ textAlign: "center", marginTop: 20, marginBottom: 20 }}>
           Welcome to our Design FAQs hub, your ultimate destination for all
           things interior design and furniture-related.
         </p>
