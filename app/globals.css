@@ -670,6 +670,9 @@ footer .copy-right .copy {
   h4 {
     font-size: 1.5rem !important;
   }
+  nav .nav .nav-bar {
+    padding: 0 10px;
+  }
   .item {
     width: 100px;
     height: 200px;
@@ -695,5 +698,13 @@ footer .copy-right .copy {
   footer .footer .logo,
   footer .footer .cta {
     margin-top: 50px;
+  }
+}
+
+@media (width < 400px){
+  .item {
+    &:nth-child(3) {
+      margin-top: 100px;
+    }
   }
 }
