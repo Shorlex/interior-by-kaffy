@@ -1,0 +1,75 @@
+/* form styling */
+.container .welcome form {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 30px 30px 100px 30px;
+  width: 50%;
+  box-shadow: 1px 1px 5px lightgrey;
+  border-radius: 10px;
+  position: absolute;
+  top: 30%;
+  left: 50px;
+  background-color: #fff;
+  opacity: .95;
+}
+
+.button {
+  margin-top: 25px;
+  padding: 12px;
+  width: 100%;
+  cursor: pointer;
+  background-color: #363636;
+  border-radius: 50px;
+  color: #fff;
+  transition: all 0.4s ease-in-out;
+}
+
+.button:hover {
+  background: #fff;
+  border: 1px solid lightgray;
+  color: #111;
+}
+
+.container .welcome form input,
+.container .welcome form textarea {
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid lightgrey;
+  border-radius: 10px;
+  padding: 9px;
+  margin: 7px;
+  transition: all 0.4s ease-in-out;
+}
+.container .welcome form input::-moz-placeholder,
+.container .welcome form textarea::-moz-placeholder {
+  font-weight: 100;
+}
+.container .welcome form input::placeholder,
+.container .welcome form textarea::placeholder {
+  font-weight: 100;
+}
+.container .welcome form input:focus,
+.container .welcome form textarea:focus {
+  outline: none;
+  font-size: 1em;
+  transition: 0.8s all ease;
+}
+.container .welcome form input:focus::-moz-placeholder,
+.container .welcome form textarea:focus::-moz-placeholder {
+  opacity: 0;
+}
+.container .welcome form input:focus::placeholder,
+.container .welcome form textarea:focus::placeholder {
+  opacity: 0;
+}
+
+@media (max-width: 750px) {
+  .container .welcome form {
+    width: 100%;
+    position: relative;
+    left: 0;
+    padding-bottom: 30px;
+    margin: 30px 0;
+  }
+}

@@ -1,0 +1,147 @@
+.img {
+  width: 500px;
+  height: 500px;
+  margin: 100px 0 0 100px;
+}
+
+.bgImage {
+  position: absolute;
+  top: 50px;
+  left: 100px;
+}
+
+.experiences {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+.experienceImage {
+  position: relative;
+}
+.years,
+.projects {
+  width: 150px;
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+  position: absolute;
+}
+.years h3,
+.projects h3 {
+  font-size: 3rem;
+}
+.years h6,
+.projects h6 {
+  font-size: 1.3rem;
+  text-align: center;
+}
+.years {
+  top: 165px;
+  left: 375px;
+}
+.projects {
+  top: 400px;
+  left: 90px;
+}
+
+.experienceBody {
+  width: 500px;
+  padding: 0 70px 20px 70px;
+}
+
+.experienceBody h3 {
+  font-size: 2rem;
+}
+
+.abouts {
+  display: flex;
+  flex-direction: row;
+  margin-top: 50px;
+}
+
+.aboutWriteUp {
+  padding: 0 20px;
+}
+
+.aboutWriteUp h5 {
+  font-size: 1.2rem;
+}
+
+.link {
+  text-decoration: none;
+  color: black;
+  border: 1px solid lightgrey;
+  border-radius: 5px;
+  padding: 20px 50px;
+  position: relative;
+  transition: 0.4s all ease-in-out;
+}
+
+.link:hover {
+  background-color: #111;
+  color: #fff;
+}
+
+@media (max-width: 1410px) {
+  .section {
+    padding: 100px 100px 0 100px !important;
+  }
+}
+
+@media (max-width: 1210px) {
+  .section {
+    padding: 100px 50px 0 50px !important;
+  }
+  .experienceBody {
+    margin-top: 100px;
+    width: 90%;
+  }
+  .img {
+    margin:0;
+  }
+}
+
+@media (max-width: 750px) {
+  .section {
+    padding: 100px 0px 0 0px !important;
+  }
+  .experienceImage {
+    width: 100%;
+  }
+  .bgImage {
+    left: 20px;
+    top: 100px;
+  }
+  .inova{
+    width: 100%;
+  }
+  
+  .years,
+  .projects {
+    display: none;
+  }
+  /* .img {
+    width: 350px;
+    height: 350px;
+  } */
+}
+
+@media (max-width: 550px) {
+  .experienceBody{
+    margin-top: 50px;
+    padding: 0;
+  }
+  .abouts{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}

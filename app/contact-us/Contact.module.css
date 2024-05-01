@@ -1,0 +1,93 @@
+.contactUsSection .mainBg {
+  width: 100%;
+  height: 100vh;
+  background-color: #363636;
+  padding: 70px 20px 20px 20px;
+  position: relative;
+}
+.contactUsSection .mainBg .bg {
+  width: 100%;
+  height: 100%;
+  background-image: url(/images/contact-us-bg.avif);
+  background-position: center;
+}
+.contactUsSection .contact {
+  padding-top: 100px;
+  width: 60%;
+  margin: 0 auto;
+  position: relative;
+}
+.contactUsSection .contact .image {
+  width: 70%;
+  height: 400px;
+  display: block;
+  margin-left: auto;
+  margin-top: 50px;
+}
+.contactUsSection .contact .contactDetails {
+  background-color: #363636;
+  border-radius: 10px;
+  padding: 50px;
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-left: auto;
+  color: #fff;
+  margin-top: 30px;
+  position: relative;
+  z-index: 1;
+}
+.contactUsSection .mainBg .contactUs {
+  width: 300px;
+  height: 150px;
+  padding: 30px;
+  position: absolute;
+  top: 30%;
+  left: 0;
+  background-color: #fff;
+  color: #363636;
+}
+.contactUsSection .mainBg .contactUs h1 {
+  font-size: 3.5rem;
+}
+.contactUsSection .mainBg .contactUs p {
+  font-style: italic;
+}
+
+@media (min-width: 1750px) {
+  .contactUsSection .mainBg {
+    height: 800px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .contactUsSection .mainBg {
+    height: 750px;
+  }
+
+  .contactUsSection .mainBg .contactUs {
+    top: 45%;
+  }
+
+  .contactUsSection .contact {
+    width: 100%;
+    padding: 100px 50px 0 50px;
+  }
+}
+
+@media (max-width: 750px) {
+  .contactUsSection .contact .contactDetails {
+    flex-direction: column;
+    margin: 0 auto;
+  }
+  .contactUsSection .contact .image {
+    display: none;
+  }
+}
+
+@media (max-width: 500px) {
+  .contactUsSection .contact {
+    padding: 100px 20px 0 20px;
+  }
+}
