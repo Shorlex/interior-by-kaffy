@@ -45,7 +45,7 @@ const Experience = () => {
       <div className={styles.bgImage}>
         <motion.img
           className={styles.img}
-          src={"/images/slideBG.png"}
+          src={"/images/slidebg.png"}
           width={100}
           height={100}
           alt="spinning-bg"
